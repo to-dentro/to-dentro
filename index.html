@@ -1,44 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça o Tô Dentro!: um projeto feito por estudantes para aproximar você das universidades públicas e dos caminhos para o ensino superior.">
-  <meta name="theme-color" content="#12324b">
-  <title>Tô Dentro! | Seu futuro tem um lugar para começar</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/config.js" defer></script>
-  <script src="js/components/site-header.js" defer></script>
-  <script src="js/components/site-footer.js" defer></script>
-  <script src="js/home.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça o Tô Dentro!: um projeto feito por estudantes para aproximar você das universidades públicas e dos caminhos para o ensino superior.">
+    <meta name="theme-color" content="#12324b">
+    <title>Tô Dentro! | Seu futuro tem um lugar para começar</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/config.js" defer></script>
+    <script src="js/components/site-header.js" defer></script>
+    <script src="js/components/site-footer.js" defer></script>
+    <script src="js/home.js" defer></script>
 </head>
+
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <site-header></site-header>
-  <main id="conteudo">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-layout">
-        <div class="hero-copy">
-          <span class="eyebrow hero-tag">Orientação universitária • Projeto estudantil</span>
-          <h1 id="hero-title">Seu futuro tem<br> um lugar para<br> começar.</h1>
-          <p>Descubra universidades públicas, explore cursos e encontre caminhos possíveis para transformar seus planos em realidade.</p>
-          <div class="button-group"><a class="button" data-platform-link>Conheça a plataforma <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a><a class="button button-light" href="#projeto">Sobre o projeto <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div>
-        </div>
-        <figure class="hero-media asset-slot"><img src="assets/images/mockups/hero-universidade.png" alt="Tela de uma universidade no Tô Dentro!, apresentada em um celular" fetchpriority="high"><figcaption class="asset-placeholder" hidden><span class="material-symbols-rounded" aria-hidden="true">smartphone</span><strong>Seu próximo capítulo<br>começa aqui.</strong><small>Mockup da universidade</small></figcaption></figure>
-      </div>
-    </section>
-    <section class="section project" id="projeto" aria-labelledby="project-title">
-      <div class="container"><span class="eyebrow">Um projeto para ampliar horizontes</span><h2 id="project-title">Escolher o próximo passo não<br> precisa ser um caminho solitário.</h2><p class="section-intro">O Tô Dentro! aproxima estudantes das oportunidades do ensino superior público, reunindo informações e recursos para apoiar escolhas mais conscientes.</p><div class="card-grid" id="benefit-list"></div></div>
-    </section>
-    <section class="discovery" aria-labelledby="discovery-title"><div class="container discovery-layout">
-      <figure class="map-media asset-slot"><img src="assets/images/mockups/mapa-universidades.png" alt="Tela do mapa de universidades do Tô Dentro! em um celular" loading="lazy"><figcaption class="asset-placeholder" hidden><span class="material-symbols-rounded" aria-hidden="true">map</span><strong>Um mundo de<br>possibilidades.</strong><small>Mockup do mapa de universidades</small></figcaption></figure>
-      <div class="discovery-copy"><h2 id="discovery-title">Explore possibilidades,<br> descubra novos<br> caminhos.</h2><p>Conheça universidades públicas, visualize suas localizações e encontre oportunidades que aproximam você do ensino superior.</p><div class="discovery-list" id="discovery-list"></div></div>
-    </div></section>
-    <section class="section journey" id="como-funciona" aria-labelledby="journey-title"><div class="container"><span class="eyebrow">Simples, do seu jeito</span><h2 id="journey-title">Da dúvida à descoberta.</h2><div class="card-grid" id="journey-list"></div></div></section>
-    <section class="section features" id="funcionalidades" aria-labelledby="features-title"><div class="container"><span class="eyebrow">O que você encontra</span><h2 id="features-title">Tudo para explorar seu caminho.</h2><p class="section-intro">Explore universidades públicas, conheça diferentes cursos e descubra oportunidades que podem transformar seu futuro.</p><div class="card-grid feature-grid" id="feature-list"></div></div></section>
-    <section class="section team" id="equipe" aria-labelledby="team-title"><div class="container"><span class="eyebrow">Por trás do Tô Dentro!</span><h2 id="team-title">Feito por estudantes, para estudantes.</h2><p class="section-intro">Um projeto educacional desenvolvido para tornar a busca pelo ensino superior público mais clara, próxima e acolhedora.</p><div class="team-panel"><span class="eyebrow">Nossa equipe</span><h3>Quem constrói esse projeto</h3><div class="team-grid" id="team-list"></div></div></div></section>
-    <section class="cta-section"><div class="container"><div class="cta"><div><h2>A universidade pública pode fazer<br> parte da sua história.</h2><p>O primeiro passo é conhecer as possibilidades.</p></div><a class="button" data-platform-link>Vamos explorar <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div></div></section>
-  </main>
-  <site-footer></site-footer>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <site-header></site-header>
+    <main id="conteudo">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <span class="eyebrow hero-tag">Orientação universitária • Projeto estudantil</span>
+                    <h1 id="hero-title">Seu futuro tem<br> um lugar para<br> começar.</h1>
+                    <p>Descubra universidades públicas, explore cursos e encontre caminhos possíveis para transformar
+                        seus planos em realidade.</p>
+                    <div class="button-group"><a class="button" data-platform-link>Conheça a plataforma <span
+                                class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a><a
+                            class="button button-light" href="#projeto">Sobre o projeto <span
+                                class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div>
+                </div>
+                <figure class="hero-media asset-slot"><img src="assets/images/mockups/hero-universidade.png"
+                        alt="Tela de uma universidade no Tô Dentro!, apresentada em um celular" fetchpriority="high">
+                    <figcaption class="asset-placeholder" hidden><span class="material-symbols-rounded"
+                            aria-hidden="true">smartphone</span><strong>Seu próximo capítulo<br>começa
+                            aqui.</strong><small>Mockup da universidade</small></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section project" id="projeto" aria-labelledby="project-title">
+            <div class="container"><span class="eyebrow">Um projeto para ampliar horizontes</span>
+                <h2 id="project-title">Escolher o próximo passo não<br> precisa ser um caminho solitário.</h2>
+                <p class="section-intro">O Tô Dentro! aproxima estudantes das oportunidades do ensino superior público,
+                    reunindo informações e recursos para apoiar escolhas mais conscientes.</p>
+                <div class="card-grid" id="benefit-list"></div>
+            </div>
+        </section>
+
+        <section class="discovery" aria-labelledby="discovery-title">
+            <div class="container discovery-layout">
+                <figure class="map-media asset-slot"><img src="assets/images/mockups/mapa-universidades.png"
+                        alt="Tela do mapa de universidades do Tô Dentro! em um celular" loading="lazy">
+                    <figcaption class="asset-placeholder" hidden><span class="material-symbols-rounded"
+                            aria-hidden="true">map</span><strong>Um mundo de<br>possibilidades.</strong><small>Mockup do
+                            mapa de universidades</small></figcaption>
+                </figure>
+                <div class="discovery-copy">
+                    <h2 id="discovery-title">Explore possibilidades,<br> descubra novos<br> caminhos.</h2>
+                    <p>Conheça universidades públicas, visualize suas localizações e encontre oportunidades que
+                        aproximam você do ensino superior.</p>
+                    <div class="discovery-list" id="discovery-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section journey" id="como-funciona" aria-labelledby="journey-title">
+            <div class="container"><span class="eyebrow">Simples, do seu jeito</span>
+                <h2 id="journey-title">Da dúvida à descoberta.</h2>
+                <div class="card-grid" id="journey-list"></div>
+            </div>
+        </section>
+        <section class="section features" id="funcionalidades" aria-labelledby="features-title">
+            <div class="container"><span class="eyebrow">O que você encontra</span>
+                <h2 id="features-title">Tudo para explorar seu caminho.</h2>
+                <p class="section-intro">Explore universidades públicas, conheça diferentes cursos e descubra
+                    oportunidades que podem transformar seu futuro.</p>
+                <div class="card-grid feature-grid" id="feature-list"></div>
+            </div>
+        </section>
+        
+        <section class="section team" id="equipe" aria-labelledby="team-title">
+            <div class="container"><span class="eyebrow">Por trás do Tô Dentro!</span>
+                <h2 id="team-title">Feito por estudantes, para estudantes.</h2>
+                <p class="section-intro">Um projeto educacional desenvolvido para tornar a busca pelo ensino superior
+                    público mais clara, próxima e acolhedora.</p>
+                <div class="team-panel"><span class="eyebrow">Nossa equipe</span>
+                    <h3>Quem constrói esse projeto</h3>
+                    <div class="team-grid" id="team-list"></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta">
+                    <div>
+                        <h2>A universidade pública pode fazer<br> parte da sua história.</h2>
+                        <p>O primeiro passo é conhecer as possibilidades.</p>
+                    </div><a class="button" data-platform-link>Vamos explorar <span class="material-symbols-rounded"
+                            aria-hidden="true">arrow_forward</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <site-footer></site-footer>
 </body>
+
 </html>
