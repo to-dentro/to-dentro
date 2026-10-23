@@ -36,3 +36,15 @@ O logotipo em `assets/images/brand/logo.svg` foi reaproveitado do web app. Os mo
 ## Próximas definições
 
 Definir conteúdo e URLs das próximas páginas. A navegação do cabeçalho usa seções da home; os grupos Explore e Sua jornada do rodapé levam às páginas do aplicativo. O acesso ao teste vocacional é controlado pelo próprio aplicativo. Não há páginas extras nem publicação configuradas.
+
+
+## Página de funcionalidades
+
+`funcionalidades.html` segue a segunda referência e compartilha cabeçalho, rodapé, fontes, ícones e estilos globais com a home. O atributo `active="funcionalidades"` destaca o link atual. `css/pages/funcionalidades.css` contém a composição; os media queries continuam em `css/responsive.css`. `js/funcionalidades.js` monta recursos, etapas e exemplos por listas. `js/site.js` centraliza os links do app, sempre com nova aba, das duas páginas.
+
+A ilustração de caminhos está em `assets/images/illustrations/novos-caminhos.png`. Para usar os mockups da referência, exporte PNG com fundo transparente, sem textos da seção:
+
+- `assets/images/mockups/calendario-ingresso.png`: composição dos quatro celulares com datas e calendário, mínimo 1600 px de altura.
+- `assets/images/mockups/teste-vocacional.png`: mãos segurando o celular com o resultado vocacional, mínimo 1400 px de altura.
+
+Os caminhos dos dois mockups já estão no HTML. Basta salvar os PNGs com os nomes indicados e recarregar a página. Enquanto os arquivos não existem, os espaços ficam vazios, sem texto ou ilustração de reserva. O botão do teste abre a página protegida do aplicativo; a autenticação continua sendo responsabilidade do app.

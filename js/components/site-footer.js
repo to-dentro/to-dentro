@@ -3,7 +3,7 @@
   const groups = [
     { title: 'Explore', links: [['Universidades públicas', appUrl('buscar-universidades')], ['Cursos e áreas de estudo', appUrl('buscar-universidades')], ['Mapa de instituições', appUrl('mapa')], ['Notas e formas de ingresso', appUrl('programas-sociais')]] },
     { title: 'Sua jornada', links: [['Teste vocacional', appUrl('teste-vocacional')], ['Oportunidades e apoio', appUrl('comunidade')]] },
-    { title: 'O projeto', links: [['Nossa proposta', '#projeto'], ['Como funciona', '#como-funciona'], ['Conheça a equipe', '#equipe']] }
+    { title: 'O projeto', links: [['Nossa proposta', 'index.html#projeto'], ['Como funciona', 'index.html#como-funciona'], ['Conheça a equipe', 'index.html#equipe']] }
   ];
   class SiteFooter extends HTMLElement {
     connectedCallback() {

@@ -5,4 +5,5 @@
 @import url('./base/global.css');
 @import url('./components/layout.css');
 @import url('./pages/home.css');
+@import url('./pages/funcionalidades.css');
 @import url('./responsive.css');

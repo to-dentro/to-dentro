@@ -28,7 +28,7 @@
     ['calendar_month', 'Calendário de ingresso', 'Acompanhe etapas e datas de processos seletivos.'],
     ['diversity_1', 'Oportunidades e apoio', 'Explore informações sobre assistência e programas estudantis.']
   ];
- 
+
   const team = [
     ['Ana Luiza Machado', 'Referencial teórico', 'ana-machado'],
     ['Ana Luiza Marchiori', 'Design da interface web', 'ana-marchiori'],
@@ -105,14 +105,4 @@
 
   });
 
-  document.querySelectorAll('[data-platform-link]').forEach(link => {
-    link.href = window.siteConfig.platformUrl || '#funcionalidades';
-
-    if (window.siteConfig.platformUrl) {
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-    } else {
-      link.title = 'Conheça os recursos da plataforma';
-    }
-  });
 })();

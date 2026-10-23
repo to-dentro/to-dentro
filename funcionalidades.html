@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça os recursos do Tô Dentro!: universidades públicas, cursos, mapa, calendário de ingresso, teste vocacional e oportunidades de apoio.">
+    <meta name="theme-color" content="#12324b">
+    <title>Funcionalidades | Tô Dentro!</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="features-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <site-header active="funcionalidades"></site-header>
+
+    <main id="conteudo">
+        <section class="features-hero" aria-labelledby="features-hero-title">
+            <div class="container features-hero-layout">
+                <div class="features-hero-copy">
+                    <span class="eyebrow pill-label">Explore a plataforma</span>
+                    <h1 id="features-hero-title">Tudo o que você<br> precisa para<br> descobrir novos<br> caminhos.</h1>
+                    <p>Ferramentas para pesquisar, comparar, refletir e planejar sua trajetória rumo ao ensino superior
+                        público.</p>
+                </div>
+                <img class="paths-illustration" src="assets/images/illustrations/novos-caminhos.png"
+                    alt="Estudante diante de caminhos que levam a novas possibilidades de estudo" width="600"
+                    height="520">
+            </div>
+        </section>
+
+        <section class="section resources" aria-labelledby="resources-title">
+            <div class="container">
+                <span class="eyebrow">Um lugar, muitas possibilidades</span>
+                <h2 id="resources-title">Conheça nossos recursos</h2>
+                <div class="resource-grid" id="resource-list"></div>
+            </div>
+        </section>
+
+        <section class="calendar-showcase" aria-labelledby="calendar-title">
+            <div class="container calendar-layout">
+                <div class="calendar-copy">
+                    <span class="eyebrow pill-label pill-mint">Organize seu futuro</span>
+                    <h2 id="calendar-title">Nunca perca<br> um prazo.</h2>
+                    <p>Inscrições, provas e etapas importantes merecem estar no seu radar. Com o calendário do Tô
+                        Dentro!, você consulta datas relevantes e se organiza para aproveitar cada oportunidade.</p>
+                    <p class="calendar-note">Planeje hoje os caminhos que quer trilhar amanhã.</p>
+                </div>
+                <div class="calendar-art">
+                    <img data-mockup src="assets/images/mockups/calendario-ingresso.png"
+                        alt="Telas do calendário de ingresso do Tô Dentro!" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="section discovery-banner">
+            <div class="container">
+                <div class="dark-panel">
+                    <span class="eyebrow pill-label pill-dark">Seu futuro começa aqui</span>
+                    <h2>Encontre possibilidades que<br> combinam com você.</h2>
+                    <p>Explore, descubra e construa seu próximo passo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="vocational-showcase" aria-labelledby="vocational-title">
+            <div class="container vocational-layout">
+                <div class="vocational-art">
+                    <img data-mockup src="assets/images/mockups/teste-vocacional.png"
+                        alt="Tela do teste vocacional do Tô Dentro!" loading="lazy">
+                </div>
+                <div class="vocational-copy">
+                    <span class="eyebrow pill-label pill-blue">
+                        <svg class="badge-star" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 1C13.5 8.5 15.5 10.5 23 12C15.5 13.5 13.5 15.5 12 23C10.5 15.5 8.5 13.5 1 12C8.5 10.5 10.5 8.5 12 1Z"
+                                fill="currentColor" />
+                        </svg>
+                        Autoconhecimento
+                    </span>
+                    <h2 id="vocational-title">Seu futuro começa com<br> uma descoberta.</h2>
+                    <p>Descubra seus interesses, reconheça suas afinidades e explore cursos que combinam com você. Um
+                        primeiro passo para escolher com mais confiança.</p>
+                </div>
+                <ol class="vocational-benefits" id="vocational-benefits"></ol>
+            </div>
+        </section>
+
+        <section class="section possibilities">
+            <div class="container">
+                <section class="soft-panel" aria-labelledby="possibilities-title">
+                    <span class="eyebrow pill-label pill-mint">Uma prévia do seu futuro</span>
+                    <h2 id="possibilities-title">Não existe um único jeito de ser você.</h2>
+                    <p>O teste ajuda a visualizar interesses e descobrir caminhos para explorar — sem limitar suas
+                        escolhas.</p>
+                    <div class="preview-grid">
+                        <div class="preview-card">
+                            <span class="eyebrow">Uma jornada de descobertas</span>
+                            <h3>De curiosidades a possibilidades.</h3>
+                            <p>Você responde. O Tô Dentro! ajuda a enxergar novos caminhos.</p>
+                            <div class="mini-grid" id="interest-steps"></div>
+                            <p class="preview-note">Sem respostas certas ou erradas. O caminho é seu.</p>
+                        </div>
+                        <div class="preview-card">
+                            <span class="eyebrow">Possibilidades, não rótulos</span>
+                            <h3>Descubra o que te move.</h3>
+                            <div class="interest-list" id="interest-list"></div>
+                        </div>
+                    </div>
+                    <div class="preview-actions">
+                        <a class="button" data-platform-link="teste-vocacional">Quero descobrir meus caminhos
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="dark-panel next-steps" aria-labelledby="next-title">
+                    <span class="eyebrow pill-label pill-dark">E depois do teste?</span>
+                    <h2 id="next-title">Da descoberta à sua próxima escolha.</h2>
+                    <p>O resultado é só o começo. Explore cursos, compare instituições e transforme curiosidade em planos concretos.</p>
+                    <div class="mini-grid" id="next-steps"></div>
+                </section>
+
+                <section class="soft-panel university-preview" aria-labelledby="university-preview-title">
+                    <span class="eyebrow pill-label pill-green">Explore suas possibilidades</span>
+                    <h2 id="university-preview-title">Uma escolha. Muitos lugares para chegar.</h2>
+                    <p>Conheça diferentes instituições e descubra o que faz sentido para o seu futuro.</p>
+                    <div class="university-preview-grid" id="university-preview-list"></div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <site-footer></site-footer>
+
+    <script src="js/config.js" defer></script>
+    <script src="js/components/site-header.js" defer></script>
+    <script src="js/components/site-footer.js" defer></script>
+    <script src="js/funcionalidades.js" defer></script>
+    <script src="js/site.js" defer></script>
+</body>
+
+</html>
