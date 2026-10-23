@@ -84,6 +84,12 @@
     ['Planeje os próximos passos', 'Salve escolhas e organize prazos.']
   ].map((step, index) => stepCard(step, index, index === 1 ? 'preview-green' : 'preview-light')).join('');
 
+  const universityLogos = {
+    USP: 'https://sobedrj.com.br/novo/wp-content/uploads/2015/10/Logo_Usp.gif',
+    UNIFESP: 'https://www.sejabixo.com.br/wp-content/uploads/2022/07/isencao-taxa-vestibular-unifesp-2023.jpeg',
+    UNICAMP: 'https://images.seeklogo.com/logo-png/14/2/unicamp-logo-png_seeklogo-144966.png'
+  };
+
   const universities = [
     [
       'USP',
@@ -111,7 +117,10 @@
   document.querySelector('#university-preview-list').innerHTML = universities.map(([abbr, name, city, course, tone]) => `
   <article class="university-example">
     <div class="university-example-heading">
-      <span class="university-monogram ${tone}">${abbr}</span>
+      <span class="university-logo${abbr !== 'UNICAMP' ? ' university-logo-wide' : ''}" data-university="${abbr.toLowerCase()}">
+        <img src="${universityLogos[abbr]}" alt="Logo ${abbr}" width="64" height="56" loading="lazy">
+        <span hidden>${abbr}</span>
+      </span>
       <div>
         <h3>${name}</h3>
         <p>${city}</p>
@@ -119,9 +128,18 @@
     </div>
     <span class="example-label">Curso</span>
     <h4>${course}</h4>
-    <a class="example-link ${tone}" data-platform-link="buscar-universidades">Explorar universidade 
+    <a class="example-link ${tone}" data-platform-link="universidade" data-platform-id="${abbr.toLowerCase()}">Explorar universidade 
       <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
     </a>
   </article>
   `).join('');  
+  // Mantém a identificação caso uma imagem externa fique indisponível.
+  document.querySelectorAll('.university-logo img').forEach(image => {
+    const showAbbreviation = () => {
+      image.hidden = true;
+      image.nextElementSibling.hidden = false;
+    };
+    image.addEventListener('error', showAbbreviation, { once: true });
+    if (image.complete && !image.naturalWidth) showAbbreviation();
+  });
 })();

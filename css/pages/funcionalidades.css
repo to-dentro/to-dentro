@@ -435,19 +435,21 @@
     margin-bottom: var(--space-4);
 }
 
-.university-monogram {
+.university-logo {
     display: grid;
     place-items: center;
-    min-width: 80px;
-    width: max-content;
-    min-height: 60px;
-    padding: var(--space-3);
-    border-radius: .8rem;
-    flex-shrink: 0;
-    white-space: nowrap;
-    line-height: var(--line-height-body);
+    flex: 0 0 64px;
+    width: 64px;
+    height: 56px;
+    background: var(--color-white);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-extrabold);
+}
+
+.university-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .university-example-heading>div {
@@ -501,4 +503,28 @@
     height: 1em;
     vertical-align: -.1em;
     margin-right: var(--space-1);
+}
+/* Marcas horizontais precisam de mais largura para preservar a leitura. */
+.university-logo-wide {
+    flex-basis: 104px;
+    width: 104px;
+    height: 64px;
+}
+
+/* Recorte visual das margens do arquivo, sem alterar a proporção da marca. */
+.university-logo-wide {
+    overflow: hidden;
+}
+
+.university-logo-wide img {
+    transform: scale(var(--logo-crop-scale, 1.2));
+    transform-origin: center;
+}
+
+.university-logo[data-university="usp"] {
+    --logo-crop-scale: 1.18;
+}
+
+.university-logo[data-university="unifesp"] {
+    --logo-crop-scale: 1.25;
 }

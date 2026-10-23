@@ -3,7 +3,9 @@
   // Configuração compartilhada dos links para o aplicativo.
   document.querySelectorAll('[data-platform-link]').forEach(link => {
     const path = link.dataset.platformLink;
-    link.href = new URL(path ? `src/pages/${path}.html` : './', window.siteConfig.platformUrl).href;
+    const url = new URL(path ? `src/pages/${path}.html` : './', window.siteConfig.platformUrl);
+    if (link.dataset.platformId) url.searchParams.set('id', link.dataset.platformId);
+    link.href = url.href;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
   });
