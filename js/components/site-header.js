@@ -1,8 +1,9 @@
 (() => {
   class SiteHeader extends HTMLElement {
     connectedCallback() {
-      const featuresPage = this.getAttribute('active') === 'funcionalidades';
-      const homeLink = hash => featuresPage ? `index.html${hash}` : hash;
+      const activePage = this.getAttribute('active') || 'projeto';
+      const isHome = activePage === 'projeto';
+      const homeLink = hash => isHome ? hash : `index.html${hash}`;
       this.innerHTML = `
       <header class="site-header">
         <div class="container header-layout">
@@ -13,9 +14,9 @@
             <span class="material-symbols-rounded" aria-hidden="true">menu</span>
           </button>
           <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-            <a href="${featuresPage ? 'index.html' : '#projeto'}"${featuresPage ? '' : ' aria-current="page"'}>${featuresPage ? 'Início' : 'O projeto'}</a>
-            <a href="funcionalidades.html"${featuresPage ? ' aria-current="page"' : ''}>Funcionalidades</a>
-            <a href="${homeLink('#como-funciona')}">Como funciona</a>
+            <a href="${isHome ? '#projeto' : 'index.html'}"${isHome ? ' aria-current="page"' : ''}>${isHome ? 'O projeto' : 'Início'}</a>
+            <a href="funcionalidades.html"${activePage === 'funcionalidades' ? ' aria-current="page"' : ''}>Funcionalidades</a>
+            <a href="como-funciona.html"${activePage === 'como-funciona' ? ' aria-current="page"' : ''}>Como funciona</a>
             <a href="${homeLink('#equipe')}">Equipe</a>
             <a class="button" data-platform-link>Acessar</a>
           </nav>

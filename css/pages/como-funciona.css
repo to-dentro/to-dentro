@@ -1,0 +1,54 @@
+/* Como funciona — estrutura da terceira página; media queries em responsive.css. */
+.how-hero { background: #e5f2f5; overflow: hidden; }
+.how-hero-layout { display: grid; grid-template-columns: 1.05fr 1.4fr; align-items: center; gap: var(--space-12); min-height: 680px; }
+.how-hero-art { width: calc(100% + max(var(--page-gutter), (100vw - var(--container-width)) / 2)); margin-left: calc(-1 * max(var(--page-gutter), (100vw - var(--container-width)) / 2)); align-self: end; min-height: 630px; }
+.how-hero-art img { width: 100%; height: 630px; object-fit: contain; object-position: left bottom; }
+.how-hero-copy { text-align: right; padding-block: var(--space-16); }
+.how-hero-copy h1 { font-size: var(--font-size-title); }
+.how-hero-copy p { font-size: var(--font-size-lg); margin-top: var(--space-4); }
+.how-hero-copy .button { margin-top: var(--space-6); }
+.how-intro { padding-block: var(--space-12) var(--space-16); }
+.how-intro p { margin-top: var(--space-4); font-size: var(--font-size-lg); }
+.how-step { position: relative; overflow: hidden; }
+.step-discover { background: var(--color-aqua); }
+.step-plan { background: #fff1a8; }
+.how-step-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); min-height: 820px; align-items: center; }
+.how-step-copy { padding-block: var(--space-16); align-self: center; }
+.how-step-copy p { max-width: 490px; margin-top: var(--space-6); font-size: var(--font-size-lg); }
+.how-step-copy .how-step-note { font-size: var(--font-size-base); font-weight: var(--font-weight-semibold); color: #347b98; }
+/* Cada enquadramento acompanha o trecho visível na referência. */
+.how-step-art { align-self: end; justify-self: center; width: min(100%, 420px); aspect-ratio: var(--step-mockup-ratio); overflow: hidden; }
+.step-discover { --step-mockup-ratio: 480 / 790; }
+.step-explore { --step-mockup-ratio: 475 / 765; }
+.step-plan { --step-mockup-ratio: 517 / 740; }
+.how-step-art img { width: 100%; height: auto; object-fit: contain; object-position: top; }
+.step-explore .how-step-copy { grid-column: 2; grid-row: 1; text-align: right; }
+.step-explore .how-step-copy p { margin-left: auto; }
+.step-explore .how-step-art { grid-column: 1; grid-row: 1; }
+.how-benefits h2 { font-size: var(--font-size-subtitle); }
+.how-benefit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); margin-top: var(--space-12); }
+.how-benefit { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-6); background: var(--color-white); border-radius: var(--radius-card); }
+.how-benefit-icon { display: grid; place-items: center; width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%; color: var(--color-petrol); }
+.how-benefit-icon .material-symbols-rounded { font-size: var(--font-size-lg); }
+.how-benefit h3 { font-size: var(--font-size-base); }
+.how-benefit p { font-size: var(--font-size-sm); margin-top: var(--space-1); }
+.how-start { margin-top: var(--space-24); }
+.how-start .button { margin-top: var(--space-8); }
+.button-yellow { background: var(--color-yellow); color: var(--color-navy); }
+.button-yellow:hover { background: #ffdf7a; }
+.how-essence { padding-block: var(--space-12); text-align: right; }
+.pill-yellow { background: #fff1a8; color: var(--color-petrol); }
+.how-essence h2 { font-size: var(--font-size-title); }
+.how-essence p { max-width: 850px; margin: var(--space-6) 0 0 auto; font-size: var(--font-size-lg); }
+.how-principles { padding-top: var(--space-16); }
+.how-principles > .container > h2 { font-size: var(--font-size-subtitle); }
+.principle-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); margin-top: var(--space-6); }
+.principle-card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-card); padding: var(--space-6); }
+.principle-card .number-badge { width: 80px; height: 80px; font-size: var(--font-size-subtitle); }
+.principle-card .eyebrow { font-size: var(--font-size-xs); color: #347b98; margin-block: var(--space-8) var(--space-6); }
+.principle-card h3 { font-size: var(--font-size-subtitle); }
+.principle-rule { display: block; width: 60px; height: 4px; margin-block: var(--space-6); }
+.principle-card p { font-size: var(--font-size-base); padding-bottom: var(--space-12); }
+.how-closing { margin-block: var(--space-16) var(--space-12); }
+.how-closing h2 { font-size: var(--font-size-subtitle); }
+.how-closing p { font-style: italic; }

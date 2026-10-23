@@ -48,3 +48,17 @@ A ilustração de caminhos está em `assets/images/illustrations/novos-caminhos.
 - `assets/images/mockups/teste-vocacional.png`: mãos segurando o celular com o resultado vocacional, mínimo 1400 px de altura.
 
 Os caminhos dos dois mockups já estão no HTML. Basta salvar os PNGs com os nomes indicados e recarregar a página. Enquanto os arquivos não existem, os espaços ficam vazios, sem texto ou ilustração de reserva. O botão do teste abre a página protegida do aplicativo; a autenticação continua sendo responsabilidade do app.
+
+
+## Página Como funciona
+
+`como-funciona.html` implementa a terceira tela, com a jornada em três momentos, benefícios e princípios. O menu usa `active="como-funciona"` e os atalhos correspondentes do site levam à nova página. Layout em `css/pages/como-funciona.css`, listas de cards em `js/como-funciona.js` e todas as adaptações em `css/responsive.css`.
+
+Salve estes PNGs em `assets/images/mockups/` e recarregue a página; os caminhos já estão preparados:
+
+- `como-funciona-hero.png`: mão segurando o celular com a tela inicial, fundo transparente, pelo menos 1200 px de altura. A imagem fica encostada à esquerda e na base da seção.
+- `como-funciona-autoconhecimento.png`: celular com a pesquisa inicial, fundo transparente, pelo menos 1600 px de altura.
+- `como-funciona-exploracao.png`: celular com a comparação de notas, fundo transparente, pelo menos 1600 px de altura.
+- `como-funciona-planejamento.png`: celular com a tela de cursos, fundo transparente, pelo menos 1600 px de altura.
+
+Exporte os três aparelhos inteiros. O CSS esconde a base no desktop e permite visualizar o aparelho completo no celular. Até salvar os arquivos, os espaços ficam vazios, sem mockups substitutos ou textos de reserva.
