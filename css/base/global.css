@@ -130,21 +130,3 @@ site-header,
 site-footer {
     display: block;
 }
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition: none !important;
-    }
-}
-
-@media (max-width: 700px) {
-    .section {
-        padding-block: var(--space-16);
-    }
-}

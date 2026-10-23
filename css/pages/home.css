@@ -46,7 +46,7 @@
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-8);
     margin-top: var(--space-12);
 }
@@ -89,7 +89,8 @@
 }
 
 .discovery {
-    overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 
 .discovery-layout {
@@ -99,10 +100,9 @@
     align-items: start;
 }
 
-/* Oculta apenas a base do aparelho, mantendo o início da tab bar. */
+/* O celular inteiro continua no layout; a próxima seção cobre a base. */
 .map-media {
-    aspect-ratio: 454 / 865;
-    overflow: hidden;
+    margin-bottom: -5rem;
 }
 
 .map-media img {
@@ -153,6 +153,8 @@
 }
 
 .journey {
+    position: relative;
+    z-index: 1;
     background: var(--color-navy);
     color: var(--color-white);
 }
@@ -238,7 +240,7 @@
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: var(--space-6);
     margin-top: var(--space-6);
 }
@@ -249,7 +251,8 @@
 
 .team-photo {
     width: 160px;
-    aspect-ratio: 1;
+    height: auto;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     margin: 0 auto var(--space-4);
     object-fit: cover;
@@ -299,85 +302,4 @@
 
 .cta .button {
     flex-shrink: 0;
-}
-
-@media (max-width: 1000px) {
-    .hero-layout {
-        min-height: 620px;
-    }
-
-    .discovery-list {
-        margin: var(--space-12) 0;
-    }
-
-    .team-grid {
-        gap: var(--space-3);
-    }
-
-    .cta {
-        padding: var(--space-8);
-    }
-}
-
-@media (max-width: 700px) {
-
-    .hero-layout,
-    .discovery-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-copy {
-        padding-bottom: 0;
-    }
-
-    .hero-media {
-        position: relative;
-        width: calc(100% + var(--page-gutter));
-        justify-self: end;
-        margin-right: calc(-1 * var(--page-gutter));
-    }
-
-    .card-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-6);
-    }
-
-    .discovery-copy {
-        grid-row: 1;
-    }
-
-    .discovery-copy h2,
-    .discovery-copy>p {
-        text-align: left;
-    }
-
-    .map-media {
-        max-width: 340px;
-        width: 100%;
-        margin-inline: auto;
-    }
-
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-8);
-    }
-
-    .team-panel {
-        padding-inline: var(--space-4);
-        border-left-width: 6px;
-    }
-
-    .team-photo {
-        width: 130px;
-    }
-
-    .cta {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .cta h2 br,
-    .project h2 br {
-        display: none;
-    }
 }

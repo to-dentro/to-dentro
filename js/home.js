@@ -28,13 +28,13 @@
     ['calendar_month', 'Calendário de ingresso', 'Acompanhe etapas e datas de processos seletivos.'],
     ['diversity_1', 'Oportunidades e apoio', 'Explore informações sobre assistência e programas estudantis.']
   ];
-  // Nomes e funções transcritos da referência; confirmar antes de publicar.
+ 
   const team = [
-    ['Ana Luiza Machado', 'UI/UX app designer', 'ana-machado'],
-    ['Ana Luiza Marchiori', 'Design de interface web', 'ana-marchiori'],
-    ['Bárbara Gonçalves', 'UI/UX app designer', 'barbara'],
-    ['Beatriz Gagliano', 'Desenvolvimento de banco de dados', 'beatriz'],
-    ['Caroline Fantinate', 'Desenvolvedora', 'carol']
+    ['Ana Luiza Machado', 'Referencial teórico', 'ana-machado'],
+    ['Ana Luiza Marchiori', 'Design da interface web', 'ana-marchiori'],
+    ['Bárbara Gonçalves', 'Referencial teórico', 'barbara'],
+    ['Beatriz Gagliano', 'Base de dados', 'beatriz'],
+    ['Caroline Fantinate', 'Programação', 'carol']
   ];
 
   const tones = ['', 'tone-yellow', 'tone-blue'];

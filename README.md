@@ -8,6 +8,7 @@ Home local em HTML, CSS e JavaScript, sem dependências de build. Abra `index.ht
 - `css/base/`: reset, importações do Google Fonts e Material Symbols, variáveis e estilos globais.
 - `css/components/`: estilos dos componentes compartilhados.
 - `css/pages/`: estilos específicos de cada página.
+- `css/responsive.css`: todos os media queries, carregados por último; faixas de 1600, 1200, 1100, 900, 600 e 380 px, além da preferência por movimento reduzido. No desktop amplo, a seção seguinte cobre a base do mapa; até 1100 px o celular aparece inteiro. A equipe usa três colunas no tablet e duas no celular, com a última integrante centralizada.
 - `js/components/`: componentes `<site-header>` e `<site-footer>` sem framework.
 - `js/home.js`: dados e renderização dos cartões, equipe e reservas visuais das imagens.
 - `js/config.js`: URL central do web app (`platformUrl`). Configurada com `https://carolfantinate.github.io/to-dentro/`; botões e atalhos do rodapé usam essa base. Não há instalação PWA implementada neste site.
