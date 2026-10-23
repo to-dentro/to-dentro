@@ -1,0 +1,22 @@
+.site-header { background: var(--color-white); }
+.header-layout { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: var(--space-8); }
+.brand img { width: 175px; height: 60px; object-fit: contain; }
+.site-nav { display: flex; align-items: center; gap: clamp(1rem, 3vw, 3rem); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
+.site-nav a:hover { color: #17868b; }
+.site-nav .button { border-radius: var(--radius-pill); padding: .6rem 2rem; }
+.site-nav .button:hover { color: white; }
+.menu-toggle { display: none; border: 0; background: transparent; color: var(--color-navy); padding: .6rem; }
+.site-footer { background: var(--color-navy); padding-block: var(--space-16) var(--space-8); color: var(--color-white); }
+.footer-grid { display: grid; grid-template-columns: 1.6fr repeat(3, 1fr); gap: var(--space-12); }
+.footer-brand { font-size: var(--font-size-subtitle); font-weight: var(--font-weight-extrabold); }
+.footer-about p { max-width: 310px; margin-top: var(--space-4); }
+.site-footer p, .site-footer li { color: #c0d4dd; font-size: var(--font-size-sm); }
+.site-footer h3 { font-size: var(--font-size-xs); color: #a1d7d2; text-transform: uppercase; margin: .6rem 0 var(--space-6); }
+.site-footer li + li { margin-top: var(--space-4); }
+.site-footer a:hover { text-decoration: underline; }
+.footer-message { border-block: 1px solid #ffffff26; padding-block: var(--space-8); margin-top: var(--space-16); }
+.footer-message .eyebrow { color: #a1d7d2; font-size: var(--font-size-xs); }
+.footer-message p { font-weight: var(--font-weight-bold); max-width: 850px; }
+.footer-bottom { display: flex; justify-content: space-between; gap: var(--space-6); padding-top: var(--space-6); }
+@media (max-width: 850px) { .header-layout { flex-wrap: wrap; gap: 0; } .menu-toggle { display: block; } .site-nav { display: none; width: 100%; padding-block: var(--space-6); align-items: stretch; flex-direction: column; } .site-nav.is-open { display: flex; } .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .footer-grid { gap: var(--space-8); } .footer-about { grid-column: 1 / -1; } .footer-bottom { flex-direction: column; } }

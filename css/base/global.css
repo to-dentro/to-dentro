@@ -1,0 +1,23 @@
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+body { font-family: var(--font-family-base); font-size: var(--font-size-base); line-height: var(--line-height-body); color: var(--color-text); background: var(--color-background); }
+h1, h2, h3 { font-weight: var(--font-weight-extrabold); line-height: var(--line-height-heading); }
+h1 { font-size: var(--font-size-hero); letter-spacing: -.035em; }
+h2 { font-size: var(--font-size-title); letter-spacing: -.025em; }
+h3 { font-size: var(--font-size-lg); }
+p { color: var(--color-text-muted); }
+.container { width: min(100% - var(--page-gutter) * 2, var(--container-width)); margin-inline: auto; }
+.section { padding-block: var(--space-24); }
+.eyebrow { display: block; margin-bottom: var(--space-4); font-size: var(--font-size-sm); font-weight: var(--font-weight-extrabold); color: #17868b; text-transform: uppercase; }
+.section-intro { margin-top: var(--space-6); font-size: var(--font-size-lg); }
+.material-symbols-rounded { font-family: 'Material Symbols Rounded'; font-weight: 400; font-style: normal; font-size: 1.5rem; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; direction: ltr; -webkit-font-smoothing: antialiased; font-feature-settings: 'liga'; }
+.button-group { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: var(--space-3); padding: .95rem 1.4rem; border-radius: var(--radius-button); background: var(--color-navy); color: var(--color-white); font-weight: var(--font-weight-extrabold); transition: background .2s, transform .2s; }
+.button:hover { background: var(--color-petrol); transform: translateY(-2px); }
+.button-light { background: var(--color-white); color: var(--color-navy); }
+.button-light:hover { background: var(--color-blue); }
+:focus-visible { outline: 3px solid #17868b; outline-offset: 5px; }
+.skip-link { position: fixed; top: 1rem; left: 1rem; transform: translateY(-200%); padding: 1rem; background: white; z-index: 20; }
+.skip-link:focus { transform: none; }
+site-header, site-footer { display: block; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
+@media (max-width: 700px) { .section { padding-block: var(--space-16); } }
