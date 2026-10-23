@@ -10,7 +10,7 @@ Home local em HTML, CSS e JavaScript, sem dependências de build. Abra `index.ht
 - `css/pages/`: estilos específicos de cada página.
 - `js/components/`: componentes `<site-header>` e `<site-footer>` sem framework.
 - `js/home.js`: dados e renderização dos cartões, equipe e reservas visuais das imagens.
-- `js/config.js`: URL central do web app (`platformUrl`). Enquanto vazia, os botões levam à seção de funcionalidades. Não há instalação PWA implementada neste site.
+- `js/config.js`: URL central do web app (`platformUrl`). Configurada com `https://carolfantinate.github.io/to-dentro/`; botões e atalhos do rodapé usam essa base. Não há instalação PWA implementada neste site.
 
 Classes e arquivos usam palavras separadas por hífen, sem duplo underline. Cores, tipografia, espaços, raios e largura do conteúdo ficam em `css/base/tokens.css`. Os textos principais ficam em HTML sem depender de JavaScript; cartões e componentes compartilhados usam JavaScript.
 
@@ -30,8 +30,8 @@ Salve os arquivos com estes nomes exatos (letras minúsculas, sem acentos):
 
 Os recortes circulares das fotos são feitos no CSS. Não é necessário exportá-los redondos. Evite margens transparentes excessivas nos mockups. Se usar outro formato, atualize os caminhos em `index.html` ou `js/home.js`.
 
-O logotipo em `assets/images/brand/logo.svg` foi reaproveitado do web app. Os mockups e retratos ausentes exibem reservas visuais automaticamente, sem ícones de imagem quebrada. Após salvar as imagens, recarregue a página.
+O logotipo em `assets/images/brand/logo.svg` foi reaproveitado do web app. Os mockups finais já estão integrados, sem textos de reserva. Retratos indisponíveis continuam usando iniciais como reserva. Após salvar as imagens, recarregue a página.
 
 ## Próximas definições
 
-Confirmar nomes e funções da equipe transcritos da referência, fornecer a URL pública do app e definir conteúdo e URLs das próximas páginas. Nesta primeira etapa, a navegação usa seções da home. Não há páginas extras nem publicação configuradas.
+Definir conteúdo e URLs das próximas páginas. A navegação do cabeçalho usa seções da home; os grupos Explore e Sua jornada do rodapé levam às páginas do aplicativo. O acesso ao teste vocacional é controlado pelo próprio aplicativo. Não há páginas extras nem publicação configuradas.

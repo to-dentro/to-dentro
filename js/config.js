@@ -1,2 +1,4 @@
-// Defina aqui a URL pública do web app quando ela estiver disponível.
-window.siteConfig = Object.freeze({ platformUrl: '' });
+// Trocar essa URL quando o aplicativo mudar de endereço
+window.siteConfig = Object.freeze({
+  platformUrl: 'https://carolfantinate.github.io/to-dentro/'
+});

@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     background: var(--color-aqua);
     overflow: hidden;
 }
@@ -30,48 +31,17 @@
     margin-block: var(--space-6) var(--space-8);
 }
 
+/* A imagem termina na borda da janela, fora do limite do conteúdo. */
 .hero-media {
-    align-self: stretch;
-    display: flex;
-    align-items: end;
-    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: min(57vw, 850px);
 }
 
 .hero-media img {
-    width: 650px;
-    max-width: 120%;
-    height: 680px;
-    object-fit: contain;
-    object-position: bottom;
-}
-
-.asset-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-6);
     width: 100%;
-    min-height: 540px;
-    margin-top: var(--space-8);
-    text-align: center;
-    border: 2px dashed #25556b33;
-    border-radius: 3rem 3rem 0 0;
-    background: #ffffff45;
-    color: var(--color-petrol);
-}
-
-.asset-placeholder .material-symbols-rounded {
-    font-size: 5rem;
-}
-
-.asset-placeholder strong {
-    font-size: var(--font-size-subtitle);
-    line-height: 1.2;
-}
-
-.asset-placeholder small {
-    color: var(--color-text-muted);
+    height: auto;
 }
 
 .card-grid {
@@ -129,22 +99,15 @@
     align-items: start;
 }
 
+/* Oculta apenas a base do aparelho, mantendo o início da tab bar. */
 .map-media {
-    height: 860px;
+    aspect-ratio: 454 / 865;
     overflow: hidden;
 }
 
 .map-media img {
     width: 100%;
-    height: 1000px;
-    object-fit: contain;
-    object-position: top;
-}
-
-.map-media .asset-placeholder {
-    min-height: 800px;
-    margin-top: 0;
-    background: var(--color-aqua);
+    height: auto;
 }
 
 .discovery-copy {
@@ -343,16 +306,8 @@
         min-height: 620px;
     }
 
-    .hero-media img {
-        height: 590px;
-    }
-
     .discovery-list {
         margin: var(--space-12) 0;
-    }
-
-    .map-media {
-        height: 760px;
     }
 
     .team-grid {
@@ -375,19 +330,11 @@
         padding-bottom: 0;
     }
 
-    .hero-media img {
-        max-width: 100%;
-        height: 450px;
-    }
-
     .hero-media {
-        max-width: 460px;
-        width: 100%;
-        margin-inline: auto;
-    }
-
-    .asset-placeholder {
-        min-height: 350px;
+        position: relative;
+        width: calc(100% + var(--page-gutter));
+        justify-self: end;
+        margin-right: calc(-1 * var(--page-gutter));
     }
 
     .card-grid {
@@ -405,14 +352,9 @@
     }
 
     .map-media {
-        height: 520px;
         max-width: 340px;
         width: 100%;
         margin-inline: auto;
-    }
-
-    .map-media img {
-        height: 700px;
     }
 
     .team-grid {

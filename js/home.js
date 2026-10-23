@@ -30,11 +30,11 @@
   ];
   // Nomes e funções transcritos da referência; confirmar antes de publicar.
   const team = [
-    ['Ana Luiza Machado', 'UI/UX app designer', 'ana-luiza-machado'],
-    ['Ana Luiza Marchiori', 'Design de interface web', 'ana-luiza-marchiori'],
-    ['Bárbara Gonçalves', 'UI/UX app designer', 'barbara-goncalves'],
-    ['Beatriz Gagliano', 'Desenvolvimento de banco de dados', 'beatriz-gagliano'],
-    ['Caroline Fantinate', 'Desenvolvedora', 'caroline-fantinate']
+    ['Ana Luiza Machado', 'UI/UX app designer', 'ana-machado'],
+    ['Ana Luiza Marchiori', 'Design de interface web', 'ana-marchiori'],
+    ['Bárbara Gonçalves', 'UI/UX app designer', 'barbara'],
+    ['Beatriz Gagliano', 'Desenvolvimento de banco de dados', 'beatriz'],
+    ['Caroline Fantinate', 'Desenvolvedora', 'carol']
   ];
 
   const tones = ['', 'tone-yellow', 'tone-blue'];
@@ -80,7 +80,7 @@
 
   document.querySelector('#team-list').innerHTML = team.map(([name, role, file]) => `
   <article class="team-member">
-    <img class="team-photo" src="assets/images/team/${file}.jpg" alt="${name}" width="160" height="160" loading="lazy">
+    <img class="team-photo" src="assets/images/members/${file}.png" alt="${name}" width="160" height="160" loading="lazy">
     
     <div class="team-photo team-avatar" aria-hidden="true" hidden>
       ${name.split(' ').map(part => part[0]).slice(0, 2).join('')}
@@ -91,8 +91,8 @@
   </article>`
   ).join('');
 
-  // Reservas visuais enquanto as imagens finais não foram exportadas.
-  document.querySelectorAll('.asset-slot img, .team-photo[src]').forEach(img => {
+  // Iniciais de reserva apenas para retratos indisponíveis.
+  document.querySelectorAll('.team-photo[src]').forEach(img => {
     const showFallback = () => {
       img.hidden = true;
       img.nextElementSibling.hidden = false;
@@ -108,6 +108,11 @@
   document.querySelectorAll('[data-platform-link]').forEach(link => {
     link.href = window.siteConfig.platformUrl || '#funcionalidades';
 
-    if (!window.siteConfig.platformUrl) link.title = 'Conheça os recursos da plataforma';
+    if (window.siteConfig.platformUrl) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    } else {
+      link.title = 'Conheça os recursos da plataforma';
+    }
   });
 })();

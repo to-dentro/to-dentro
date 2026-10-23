@@ -9,15 +9,13 @@
     <meta name="theme-color" content="#12324b">
     <title>Tô Dentro! | Seu futuro tem um lugar para começar</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/config.js" defer></script>
-    <script src="js/components/site-header.js" defer></script>
-    <script src="js/components/site-footer.js" defer></script>
-    <script src="js/home.js" defer></script>
+    <link rel="shortcut icon" href="assets/images/brand/icon.png" type="image/x-icon">
 </head>
 
 <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <site-header></site-header>
+
     <main id="conteudo">
         <section class="hero" aria-labelledby="hero-title">
             <div class="container hero-layout">
@@ -31,11 +29,8 @@
                             class="button button-light" href="#projeto">Sobre o projeto <span
                                 class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></div>
                 </div>
-                <figure class="hero-media asset-slot"><img src="assets/images/mockups/hero-universidade.png"
+                <figure class="hero-media"><img src="assets/images/mockups/hero-universidade.png"
                         alt="Tela de uma universidade no Tô Dentro!, apresentada em um celular" fetchpriority="high">
-                    <figcaption class="asset-placeholder" hidden><span class="material-symbols-rounded"
-                            aria-hidden="true">smartphone</span><strong>Seu próximo capítulo<br>começa
-                            aqui.</strong><small>Mockup da universidade</small></figcaption>
                 </figure>
             </div>
         </section>
@@ -51,11 +46,8 @@
 
         <section class="discovery" aria-labelledby="discovery-title">
             <div class="container discovery-layout">
-                <figure class="map-media asset-slot"><img src="assets/images/mockups/mapa-universidades.png"
+                <figure class="map-media"><img src="assets/images/mockups/mapa-universidades.png"
                         alt="Tela do mapa de universidades do Tô Dentro! em um celular" loading="lazy">
-                    <figcaption class="asset-placeholder" hidden><span class="material-symbols-rounded"
-                            aria-hidden="true">map</span><strong>Um mundo de<br>possibilidades.</strong><small>Mockup do
-                            mapa de universidades</small></figcaption>
                 </figure>
                 <div class="discovery-copy">
                     <h2 id="discovery-title">Explore possibilidades,<br> descubra novos<br> caminhos.</h2>
@@ -80,7 +72,7 @@
                 <div class="card-grid feature-grid" id="feature-list"></div>
             </div>
         </section>
-        
+
         <section class="section team" id="equipe" aria-labelledby="team-title">
             <div class="container"><span class="eyebrow">Por trás do Tô Dentro!</span>
                 <h2 id="team-title">Feito por estudantes, para estudantes.</h2>
@@ -98,13 +90,20 @@
                     <div>
                         <h2>A universidade pública pode fazer<br> parte da sua história.</h2>
                         <p>O primeiro passo é conhecer as possibilidades.</p>
-                    </div><a class="button" data-platform-link>Vamos explorar <span class="material-symbols-rounded"
-                            aria-hidden="true">arrow_forward</span></a>
+                    </div>
+                    <a class="button" data-platform-link>Vamos explorar
+                        <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
     <site-footer></site-footer>
+
+    <script src="js/config.js" defer></script>
+    <script src="js/components/site-header.js" defer></script>
+    <script src="js/components/site-footer.js" defer></script>
+    <script src="js/home.js" defer></script>
 </body>
 
 </html>
