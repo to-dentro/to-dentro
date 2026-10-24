@@ -31,7 +31,6 @@
     margin-block: var(--space-6) var(--space-8);
 }
 
-/* A imagem termina na borda da janela, fora do limite do conteúdo. */
 .hero-media {
     position: absolute;
     right: 0;
@@ -100,7 +99,6 @@
     align-items: start;
 }
 
-/* O celular inteiro continua no layout; a próxima seção cobre a base. */
 .map-media {
     margin-bottom: -5rem;
 }

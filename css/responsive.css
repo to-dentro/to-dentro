@@ -1,6 +1,4 @@
-/* Todas as adaptações de tela ficam aqui, após os estilos base e de página.
-   Faixas: desktop amplo, notebook, tablet, celular e celular compacto.
-   Os tamanhos intermediários são atendidos pelos grids e valores fluidos. */
+/*Reponsividade*/
 @media (min-width: 1600px) {
     .hero-media {
         width: min(55vw, 1000px);
@@ -73,8 +71,6 @@
 }
 
 @media (max-width: 1100px) {
-
-    /* A partir do notebook menor, a seção não cobre mais o aparelho. */
     .map-media {
         margin-bottom: 0;
     }
@@ -460,7 +456,6 @@
     }
 }
 
-/* Funcionalidades: mesmas faixas da página inicial. */
 @media (max-width: 1100px) {
     .vocational-layout {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -741,11 +736,24 @@
     }
 
     .preview-grid .mini-grid {
-        gap: var(--space-2);
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-4);
     }
 
     .preview-grid .mini-card {
-        padding: var(--space-3);
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        align-items: center;
+        gap: var(--space-3);
+        padding: var(--space-4);
+    }
+
+    .preview-grid .mini-card h4 {
+        margin: 0;
+    }
+
+    .preview-grid .mini-card p {
+        grid-column: 1 / -1;
     }
 
     .mini-card h4 {
@@ -819,69 +827,267 @@
         font-size: var(--font-size-sm);
     }
 }
+
 @media (min-width: 901px) and (max-width: 1100px) {
-    .university-example-heading { flex-wrap: wrap; }
+    .university-example-heading {
+        flex-wrap: wrap;
+    }
 }
 
-/* Como funciona — preserva as mesmas faixas e a escala global de títulos. */
+/* Como funciona */
 @media (max-width: 1200px) {
-    .how-hero-layout { gap: var(--space-8); min-height: 600px; }
-    .how-hero-art { min-height: 570px; }
-    .how-hero-art img { height: 570px; }
-    .how-step-layout { gap: var(--space-12); min-height: 700px; }
-    .how-step-art { width: min(100%, 370px); }
-    .how-benefit { padding: var(--space-4); }
-    .how-start { margin-top: var(--space-16); }
-    .how-page .dark-panel { padding: var(--space-8); }
+    .how-hero-layout {
+        gap: var(--space-8);
+        min-height: 600px;
+    }
+
+    .how-hero-art {
+        min-height: 570px;
+    }
+
+    .how-hero-art img {
+        height: 570px;
+    }
+
+    .how-step-layout {
+        gap: var(--space-12);
+        min-height: 700px;
+    }
+
+    .how-step-art {
+        width: min(100%, 370px);
+    }
+
+    .how-benefit {
+        padding: var(--space-4);
+    }
+
+    .how-start {
+        margin-top: var(--space-16);
+    }
+
+    .how-page .dark-panel {
+        padding: var(--space-8);
+    }
 }
+
 @media (max-width: 900px) {
-    .how-hero-layout { grid-template-columns: 1fr 1.15fr; min-height: 540px; gap: var(--space-6); }
-    .how-hero-art { min-height: 500px; }
-    .how-hero-art img { height: 500px; }
-    .how-hero-copy h1 br { display: none; }
-    .how-hero-copy p, .how-intro p, .how-step-copy p, .how-essence p { font-size: var(--font-size-base); }
-    .how-step-layout { min-height: 600px; gap: var(--space-8); }
-    .how-step-art { width: min(100%, 310px); }
-    .how-step-copy h2 br { display: none; }
-    .how-benefit-grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-4); margin-top: var(--space-8); }
-    .principle-card { padding: var(--space-4); }
-    .principle-card .number-badge { width: 60px; height: 60px; font-size: var(--font-size-lg); }
-    .principle-card h3 { font-size: var(--font-size-title); }
-    .principle-card .eyebrow { margin-block: var(--space-6) var(--space-4); }
-    .principle-card p { padding-bottom: var(--space-6); font-size: var(--font-size-sm); }
-    .principle-grid { gap: var(--space-4); }
+    .how-hero-layout {
+        grid-template-columns: 1fr 1.15fr;
+        min-height: 540px;
+        gap: var(--space-6);
+    }
+
+    .how-hero-art {
+        min-height: 500px;
+    }
+
+    .how-hero-art img {
+        height: 500px;
+    }
+
+    .how-hero-copy h1 br {
+        display: none;
+    }
+
+    .how-hero-copy p,
+    .how-intro p,
+    .how-step-copy p,
+    .how-essence p {
+        font-size: var(--font-size-base);
+    }
+
+    .how-step-layout {
+        min-height: 600px;
+        gap: var(--space-8);
+    }
+
+    .how-step-art {
+        width: min(100%, 310px);
+    }
+
+    .how-step-copy h2 br {
+        display: none;
+    }
+
+    .how-benefit-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-4);
+        margin-top: var(--space-8);
+    }
+
+    .principle-card {
+        padding: var(--space-4);
+    }
+
+    .principle-card .number-badge {
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-lg);
+    }
+
+    .principle-card h3 {
+        font-size: var(--font-size-title);
+    }
+
+    .principle-card .eyebrow {
+        margin-block: var(--space-6) var(--space-4);
+    }
+
+    .principle-card p {
+        padding-bottom: var(--space-6);
+        font-size: var(--font-size-sm);
+    }
+
+    .principle-grid {
+        gap: var(--space-4);
+    }
 }
+
 @media (max-width: 700px) {
-    .how-hero-layout { grid-template-columns: minmax(0, 1fr); min-height: 0; gap: 0; }
-    .how-hero-copy { grid-row: 1; padding-block: var(--space-12) var(--space-8); text-align: left; }
-    .how-hero-art { width: calc(100% + var(--page-gutter)); min-height: 400px; max-width: 520px; }
-    .how-hero-art img { height: auto; max-height: 520px; }
-    .how-step-layout { grid-template-columns: minmax(0, 1fr); gap: 0; min-height: 0; }
-    .how-step-copy, .step-explore .how-step-copy { grid-column: 1; grid-row: 1; text-align: left; padding-block: var(--space-12) var(--space-8); }
-    .how-step-copy p { max-width: none; }
-    .step-explore .how-step-copy p { margin-left: 0; }
-    .how-step-art, .step-explore .how-step-art { grid-column: 1; grid-row: 2; width: min(82%, 330px); height: auto; min-height: 0; margin-inline: auto; overflow: hidden; }
-    .how-step-art img { height: auto; max-height: none; }
-    .how-step { padding-bottom: 0; }
-    .principle-grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-6); }
-    .principle-card { padding: var(--space-6); }
-    .principle-card p { padding-bottom: 0; font-size: var(--font-size-base); }
-    .how-essence { text-align: left; }
-    .how-essence h2 br { display: none; }
-    .how-essence p { margin-left: 0; }
+    .how-hero-layout {
+        grid-template-columns: minmax(0, 1fr);
+        min-height: 0;
+        gap: 0;
+    }
+
+    .how-hero-copy {
+        grid-row: 1;
+        padding-block: var(--space-12) var(--space-8);
+        text-align: left;
+    }
+
+    .how-hero-art {
+        width: calc(100% + var(--page-gutter));
+        min-height: 400px;
+        max-width: 520px;
+    }
+
+    .how-hero-art img {
+        height: auto;
+        max-height: 520px;
+    }
+
+    .how-step-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        min-height: 0;
+    }
+
+    .how-step-copy,
+    .step-explore .how-step-copy {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+        padding-block: var(--space-12) var(--space-8);
+    }
+
+    .how-step-copy p {
+        max-width: none;
+    }
+
+    .step-explore .how-step-copy p {
+        margin-left: 0;
+    }
+
+    .how-step-art,
+    .step-explore .how-step-art {
+        grid-column: 1;
+        grid-row: 2;
+        width: min(82%, 330px);
+        height: auto;
+        min-height: 0;
+        margin-inline: auto;
+        overflow: hidden;
+    }
+
+    .how-step-art img {
+        height: auto;
+        max-height: none;
+    }
+
+    .how-step {
+        padding-bottom: 0;
+    }
+
+    .principle-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-6);
+    }
+
+    .principle-card {
+        padding: var(--space-6);
+    }
+
+    .principle-card p {
+        padding-bottom: 0;
+        font-size: var(--font-size-base);
+    }
+
+    .how-essence {
+        text-align: left;
+    }
+
+    .how-essence h2 br {
+        display: none;
+    }
+
+    .how-essence p {
+        margin-left: 0;
+    }
 }
+
 @media (max-width: 600px) {
-    .how-intro { padding-block: var(--space-8) var(--space-12); }
-    .how-benefits h2, .how-principles > .container > h2, .how-closing h2 { font-size: var(--font-size-title); }
-    .how-page .dark-panel { padding: var(--space-6); border-radius: var(--radius-card); }
-    .how-start { margin-top: var(--space-12); }
-    .how-closing { margin-block: var(--space-12) 0; }
-    .how-closing h2 br { display: none; }
-    .how-essence { padding-block: var(--space-8); }
-    .how-principles { padding-top: var(--space-12); }
+    .how-intro {
+        padding-block: var(--space-8) var(--space-12);
+    }
+
+    .how-benefits h2,
+    .how-principles>.container>h2,
+    .how-closing h2 {
+        font-size: var(--font-size-title);
+    }
+
+    .how-page .dark-panel {
+        padding: var(--space-6);
+        border-radius: var(--radius-card);
+    }
+
+    .how-start {
+        margin-top: var(--space-12);
+    }
+
+    .how-closing {
+        margin-block: var(--space-12) 0;
+    }
+
+    .how-closing h2 br {
+        display: none;
+    }
+
+    .how-essence {
+        padding-block: var(--space-8);
+    }
+
+    .how-principles {
+        padding-top: var(--space-12);
+    }
 }
+
 @media (max-width: 380px) {
-    .how-page .dark-panel, .principle-card { padding: var(--space-4); }
-    .how-hero-art { min-height: 300px; }
-    .how-step-art, .step-explore .how-step-art { min-height: 0; width: min(84%, 300px); }
+
+    .how-page .dark-panel,
+    .principle-card {
+        padding: var(--space-4);
+    }
+
+    .how-hero-art {
+        min-height: 300px;
+    }
+
+    .how-step-art,
+    .step-explore .how-step-art {
+        min-height: 0;
+        width: min(84%, 300px);
+    }
 }

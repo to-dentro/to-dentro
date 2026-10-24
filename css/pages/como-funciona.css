@@ -1,4 +1,4 @@
-/* Como funciona — estrutura da terceira página; media queries em responsive.css. */
+/* Como funciona*/
 .how-hero {
     background: #e5f2f5;
     overflow: hidden;
@@ -91,7 +91,6 @@
     color: #347b98;
 }
 
-/* Cada enquadramento acompanha o trecho visível na referência. */
 .how-step-art {
     align-self: end;
     justify-self: center;

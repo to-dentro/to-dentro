@@ -1,4 +1,4 @@
-/* Funcionalidades — composição da segunda página. As adaptações ficam em responsive.css. */
+/* Funcionalidades*/
 .pill-label {
     display: inline-block;
     padding: .55rem 1rem;
@@ -149,7 +149,6 @@
     position: relative;
 }
 
-/* Suaviza apenas a borda junto ao texto no layout em duas colunas. */
 .calendar-art>img {
     width: 100%;
     max-width: none;
@@ -504,14 +503,13 @@
     vertical-align: -.1em;
     margin-right: var(--space-1);
 }
-/* Marcas horizontais precisam de mais largura para preservar a leitura. */
+
 .university-logo-wide {
     flex-basis: 104px;
     width: 104px;
     height: 64px;
 }
 
-/* Recorte visual das margens do arquivo, sem alterar a proporção da marca. */
 .university-logo-wide {
     overflow: hidden;
 }
