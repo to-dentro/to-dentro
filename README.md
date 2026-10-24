@@ -20,13 +20,19 @@ Este repositório contém o **website institucional e promocional do Tô Dentro!
 
 ---
 
-## 🌐 Acesse o projeto
+## 🌐 Conheça e acesse o Tô Dentro!
 
-Conheça a plataforma **Tô Dentro!** e explore universidades públicas, cursos e possibilidades para sua jornada.
+**Conheça mais sobre o projeto**
 
-🔗 **[Acessar a plataforma Tô Dentro!](https://carolfantinate.github.io/to-dentro/)**
+Visite o website de apresentação para conhecer nossa proposta, as funcionalidades, como a plataforma funciona e a equipe responsável.
 
-O website deste repositório apresenta o projeto nas páginas **O projeto**, **Funcionalidades** e **Como funciona**, além da seção dedicada à equipe.
+🔗 **[Conheça mais sobre o projeto](https://to-dentro.github.io/to-dentro/)**
+
+**Acesse o Tô Dentro!**
+
+Entre na plataforma para explorar universidades públicas, conhecer cursos e descobrir possibilidades para sua jornada universitária.
+
+🔗 **[Acesse o Tô Dentro!](https://carolfantinate.github.io/to-dentro/)**
 
 ---
 
