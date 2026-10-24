@@ -32,7 +32,7 @@ Visite o website de apresentação para conhecer nossa proposta, as funcionalida
 
 Entre na plataforma para explorar universidades públicas, conhecer cursos e descobrir possibilidades para sua jornada universitária.
 
-🔗 **[Acesse o Tô Dentro!](https://carolfantinate.github.io/to-dentro/)**
+🔗 **[Acesse o Tô Dentro!](https://to-dentro.github.io/app/)**
 
 ---
 
